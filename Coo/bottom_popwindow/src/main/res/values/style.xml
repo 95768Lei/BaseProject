@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--PopupWindow弹出的动画-->
+    <style name="pop_window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_info_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+</resources>
