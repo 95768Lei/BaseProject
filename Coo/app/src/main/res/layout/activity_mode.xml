@@ -4,6 +4,8 @@
     android:id="@+id/activity_mode_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
     tools:context="com.example.administrator.coo.ModeActivity">
 
 </ListView>

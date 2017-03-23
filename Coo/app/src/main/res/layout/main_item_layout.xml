@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/main_item_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_margin="20px"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -17,6 +17,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/main_item_icon"
-        android:text="@string/data" />
+        android:text="@string/data"
+        android:textSize="@dimen/standard_size" />
 
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

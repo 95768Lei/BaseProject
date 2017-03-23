@@ -1,16 +1,17 @@
 package com.example.administrator.coo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.administrator.coo.transition.Transition1Activity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModeActivity extends Activity {
+public class ModeActivity extends BaseActivity {
 
     private ListView mode_list;
     private UniversalAdapter<String> adapter;
@@ -51,6 +52,12 @@ public class ModeActivity extends Activity {
                     case 2:
                         startActivity(new Intent(ModeActivity.this, TextInputActivity.class));
                         break;
+                    case 3:
+                        startActivity(new Intent(ModeActivity.this, CountDownActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(ModeActivity.this, Transition1Activity.class));
+                        break;
                 }
             }
         });
@@ -60,6 +67,8 @@ public class ModeActivity extends Activity {
         mList.add("CoordinatorLayout");
         mList.add("BottomPop");
         mList.add("(仿微博话题)TextInput");
+        mList.add("CountDown");
+        mList.add("Transition");
         adapter.notifyDataSetChanged();
     }
 }

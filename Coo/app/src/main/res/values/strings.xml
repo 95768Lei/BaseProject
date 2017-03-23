@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">Coo</string>
     <string name="data">这里是占位文字</string>
-
+    <string name="last_initial">Last Initial</string>
+    <string name="first_name">First Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="choose_avatar">Choose an Avatar</string>
+    <string name="an_avatar">An Avatar</string>
+    <string name="quiz_of_quizzes">%1$s / %2$s</string>
+    <string name="btn_true">True</string>
+    <string name="btn_false">False</string>
+    <string name="category">Category</string>
+    <string name="sign_out">Sign out</string>
+    <string name="x_points">%1$d pts</string>
+    <string name="back">back</string>
      <string name="policy_text">
          第一条  为了加强社会救助，保障公民的基本生活，促进社会公平，维护社会和谐稳定，根据宪法，制定本办法。\n
     第二条  社会救助制度坚持托底线、救急难、可持续，与其他社会保障制度相衔接，社会救助水平与经济社会发展水平相适应。

@@ -79,7 +79,6 @@ public class TextInputActivity extends BaseActivity {
                 }
             }
         }
-
     }
 
     /**

@@ -3,10 +3,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/c_blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
         <item name="colorAccent">@color/colorAccent</item>
-
+        <item name="android:windowTranslucentStatus">true
+        </item>    <!--状态栏为透明,如果设置为false，则没有黑色条盖住，见下图对比-->
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
 </resources>

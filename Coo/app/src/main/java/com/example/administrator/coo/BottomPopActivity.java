@@ -1,15 +1,15 @@
 package com.example.administrator.coo;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.bottom_popwindow.BottomPop;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BottomPopActivity extends Activity {
+public class BottomPopActivity extends BaseActivity {
 
     private BottomPop bottomPop;
 
@@ -23,6 +23,17 @@ public class BottomPopActivity extends Activity {
             list.add("--LIST--");
         }
         bottomPop.setList(list);
+        bottomPop.setOnClickOkCancelListener(new BottomPop.OnClickOkCancelListener() {
+            @Override
+            public void onClickOk(String items, int position) {
+                Toast.makeText(BottomPopActivity.this, "items:" + items + "\nposition:" + position, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onClickCancel() {
+                bottomPop.dismissPop();
+            }
+        });
     }
 
     public void open(View view) {

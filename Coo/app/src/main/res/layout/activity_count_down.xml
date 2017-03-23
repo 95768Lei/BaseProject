@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_count_down"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="com.example.administrator.coo.CountDownActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/count_down_text"
+            android:layout_width="160px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16px"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="3 | 跳过"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

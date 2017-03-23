@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transition1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.coo.transition.Transition1Activity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:minHeight="480px">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="360px"
+            android:layout_height="220px"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/standard_size"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/girl" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_icon"
+            android:text="ZhangLei"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_size" />
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/standard_size"
+            android:src="@mipmap/right" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>
