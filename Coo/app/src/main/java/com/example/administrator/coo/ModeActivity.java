@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.administrator.coo.meterial.BottomActivity;
 import com.example.administrator.coo.transition.Transition1Activity;
 
 import java.util.ArrayList;
@@ -58,6 +59,9 @@ public class ModeActivity extends BaseActivity {
                     case 4:
                         startActivity(new Intent(ModeActivity.this, Transition1Activity.class));
                         break;
+                    case 5:
+                        startActivity(new Intent(ModeActivity.this, BottomActivity.class));
+                        break;
                 }
             }
         });
@@ -69,6 +73,7 @@ public class ModeActivity extends BaseActivity {
         mList.add("(仿微博话题)TextInput");
         mList.add("CountDown");
         mList.add("Transition");
+        mList.add("BottomNavigation");
         adapter.notifyDataSetChanged();
     }
 }

@@ -19,6 +19,7 @@
             android:fitsSystemWindows="true"
             android:onClick="open"
             android:text="弹框" />
+
     </RelativeLayout>
 
 

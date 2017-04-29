@@ -13,7 +13,7 @@
     <string name="sign_out">Sign out</string>
     <string name="x_points">%1$d pts</string>
     <string name="back">back</string>
-     <string name="policy_text">
+    <string name="policy_text">
          第一条  为了加强社会救助，保障公民的基本生活，促进社会公平，维护社会和谐稳定，根据宪法，制定本办法。\n
     第二条  社会救助制度坚持托底线、救急难、可持续，与其他社会保障制度相衔接，社会救助水平与经济社会发展水平相适应。
     社会救助工作应当遵循公开、公平、公正、及时的原则。\n
@@ -59,4 +59,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_sy"
+        android:checked="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="首页" />
+    <item
+        android:id="@+id/bottom_xs"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="线索" />
+    <item
+        android:id="@+id/bottom_qf"
+        android:icon="@drawable/ic_people_outline_black_24dp"
+        android:title="群防" />
+    <item
+        android:id="@+id/bottom_wd"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:title="我的" />
+</menu>

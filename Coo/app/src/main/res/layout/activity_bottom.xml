@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.coo.meterial.BottomActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_view"
+        style="@style/BottomNavigation_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/bottom_bg"
+        app:itemTextColor="@color/bottom_bg"
+        app:menu="@menu/bottom_item_menu"></android.support.design.widget.BottomNavigationView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_view"
+        ></RelativeLayout>
+</RelativeLayout>
