@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
-import com.example.administrator.coo.BaseActivity;
+import com.example.administrator.coo.Base.BaseActivity;
 import com.example.administrator.coo.R;
 
 import static com.example.administrator.coo.meterial.BNVFragment.HOME;

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.administrator.coo.BaseActivity;
+import com.example.administrator.coo.Base.BaseActivity;
 import com.example.administrator.coo.R;
 
 import butterknife.BindView;

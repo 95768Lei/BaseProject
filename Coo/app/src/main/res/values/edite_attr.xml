@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pe_count" format="integer" />
+        <attr name="pe_lineWidth" format="dimension" />
+        <attr name="pe_cuttingLineWidth" format="dimension" />
+        <attr name="pe_lineColor" format="color" />
+        <attr name="pe_cuttingLineColor" format="color" />
+        <attr name="pe_passwordColor" format="color" />
+        <attr name="pe_chunkColor" format="color" />
+    </declare-styleable>
+
+</resources>

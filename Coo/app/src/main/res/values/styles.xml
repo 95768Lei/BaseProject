@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/blue</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowTranslucentStatus">true
-        </item>    <!--状态栏为透明,如果设置为false，则没有黑色条盖住，见下图对比-->
+        </item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
 

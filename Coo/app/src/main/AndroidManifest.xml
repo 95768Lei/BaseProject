@@ -39,7 +39,9 @@
         <activity android:name=".transition.Transition1Activity" />
         <activity android:name=".transition.Transition2Activity" />
         <activity android:name=".TabActivity" />
-        <activity android:name=".meterial.BottomActivity"></activity>
+        <activity android:name=".meterial.BottomActivity" />
+        <activity android:name=".LineFeed.LineFeedActivity" />
+        <activity android:name=".passwordEditText.PasswordEditTextActivity"></activity>
     </application>
 
 </manifest>

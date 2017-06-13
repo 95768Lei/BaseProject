@@ -16,7 +16,6 @@ import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,13 +28,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -149,26 +141,26 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://172.16.18.37:8787").
-                addConverterFactory(ScalarsConverterFactory.create()).
-                addConverterFactory(GsonConverterFactory.create()).
-                build();
-        RequestService requestService = retrofit.create(RequestService.class);
-//        Map<String, String> params = new HashMap<>();
-//        params.put("UserName", "admin");
-//        params.put("UserPwd", "0000");
-        Call<String> call = requestService.getString();
-        call.enqueue(new Callback<String>() {
-            @Override
-            public void onResponse(Call<String> call, Response<String> response) {
-                Log.e("data", response.body().toString());
-            }
-
-            @Override
-            public void onFailure(Call<String> call, Throwable t) {
-                Log.e("data", "onFailure");
-            }
-        });
+//        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://172.16.18.37:8787").
+//                addConverterFactory(ScalarsConverterFactory.create()).
+//                addConverterFactory(GsonConverterFactory.create()).
+//                build();
+//        RequestService requestService = retrofit.create(RequestService.class);
+////        Map<String, String> params = new HashMap<>();
+////        params.put("UserName", "admin");
+////        params.put("UserPwd", "0000");
+//        Call<String> call = requestService.getString();
+//        call.enqueue(new Callback<String>() {
+//            @Override
+//            public void onResponse(Call<String> call, Response<String> response) {
+//                Log.e("data", response.body().toString());
+//            }
+//
+//            @Override
+//            public void onFailure(Call<String> call, Throwable t) {
+//                Log.e("data", "onFailure");
+//            }
+//        });
     }
 
     /**

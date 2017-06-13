@@ -10,6 +10,7 @@ import android.provider.MediaStore;
 import android.support.v7.widget.LinearLayoutManager;
 import android.widget.Toast;
 
+import com.example.administrator.coo.Base.BaseActivity;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.io.File;

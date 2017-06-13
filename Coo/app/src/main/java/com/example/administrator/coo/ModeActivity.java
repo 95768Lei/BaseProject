@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.administrator.coo.Base.BaseActivity;
+import com.example.administrator.coo.passwordEditText.PasswordEditTextActivity;
 import com.example.administrator.coo.meterial.BottomActivity;
 import com.example.administrator.coo.transition.Transition1Activity;
 
@@ -62,6 +64,9 @@ public class ModeActivity extends BaseActivity {
                     case 5:
                         startActivity(new Intent(ModeActivity.this, BottomActivity.class));
                         break;
+                    case 6:
+                        startActivity(new Intent(ModeActivity.this, PasswordEditTextActivity.class));
+                        break;
                 }
             }
         });
@@ -74,6 +79,7 @@ public class ModeActivity extends BaseActivity {
         mList.add("CountDown");
         mList.add("Transition");
         mList.add("BottomNavigation");
+        mList.add("PasswordEditText");
         adapter.notifyDataSetChanged();
     }
 }
