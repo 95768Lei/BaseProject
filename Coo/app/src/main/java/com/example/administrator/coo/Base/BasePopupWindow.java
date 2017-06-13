@@ -30,12 +30,19 @@ public abstract class BasePopupWindow implements View.OnClickListener, PopupWind
      * @param layoutView
      */
     protected void initPopupWindow(View layoutView) {
-        popupWindow = new PopupWindow(layoutView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        popupWindow = new PopupWindow(layoutView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setFocusable(true);
         popupWindow.setTouchable(true);
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(new BitmapDrawable());
         popupWindow.setOnDismissListener(this);
+
+        popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                hideWindow();
+            }
+        });
     }
 
     /**

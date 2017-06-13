@@ -41,7 +41,8 @@
         <activity android:name=".TabActivity" />
         <activity android:name=".meterial.BottomActivity" />
         <activity android:name=".LineFeed.LineFeedActivity" />
-        <activity android:name=".passwordEditText.PasswordEditTextActivity"></activity>
+        <activity android:name=".passwordEditText.PasswordEditTextActivity" />
+        <activity android:name=".upDownListView.TestActivity"></activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import com.example.administrator.coo.Base.BaseActivity;
 import com.example.administrator.coo.passwordEditText.PasswordEditTextActivity;
 import com.example.administrator.coo.meterial.BottomActivity;
 import com.example.administrator.coo.transition.Transition1Activity;
+import com.example.administrator.coo.upDownListView.TestActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,6 +68,9 @@ public class ModeActivity extends BaseActivity {
                     case 6:
                         startActivity(new Intent(ModeActivity.this, PasswordEditTextActivity.class));
                         break;
+                    case 7:
+                        startActivity(new Intent(ModeActivity.this, TestActivity.class));
+                        break;
                 }
             }
         });
@@ -80,6 +84,7 @@ public class ModeActivity extends BaseActivity {
         mList.add("Transition");
         mList.add("BottomNavigation");
         mList.add("PasswordEditText");
+        mList.add("Test");
         adapter.notifyDataSetChanged();
     }
 }
