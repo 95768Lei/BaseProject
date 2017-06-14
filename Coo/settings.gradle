@@ -1,1 +1,1 @@
-include ':app', ':bottom_popwindow'
+include ':app', ':bottom_popwindow', ':sanjiopopupwindow'

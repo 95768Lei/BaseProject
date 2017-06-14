@@ -19,19 +19,43 @@ import java.util.List;
 public class BottomPop implements View.OnClickListener {
 
     private Activity context;
-    private final View view;
-    private final WheelView wheelView;
-    private final PopupWindow popupWindow;
-    private final View ok;
-    private final View cancel;
+    private View view;
+    private WheelView wheelView;
+    private PopupWindow popupWindow;
+    private View ok;
+    private View cancel;
+    private int offsize = 2;
 
     public BottomPop(Activity context) {
         this.context = context;
+        initView();
+        initPopupWindow();
+        initListener();
+    }
+
+    /**
+     * 初始化监听事件
+     */
+    private void initListener() {
+        ok.setOnClickListener(this);
+        cancel.setOnClickListener(this);
+    }
+
+    /**
+     * 初始化控件
+     */
+    private void initView() {
         view = LayoutInflater.from(context).inflate(R.layout.bottom_layout, null);
         wheelView = (WheelView) view.findViewById(R.id.bottom_wheelView);
         ok = view.findViewById(R.id.bottom_ok);
         cancel = view.findViewById(R.id.bottom_cancel);
-        wheelView.setOffset(2);
+        wheelView.setOffset(offsize);
+    }
+
+    /**
+     * 初始化popupwindow
+     */
+    private void initPopupWindow() {
         popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setBackgroundDrawable(new BitmapDrawable());
         popupWindow.setTouchable(true);
@@ -43,8 +67,6 @@ public class BottomPop implements View.OnClickListener {
                 setAlpha(1f);
             }
         });
-        ok.setOnClickListener(this);
-        cancel.setOnClickListener(this);
     }
 
     public void showPop(View view) {
@@ -52,8 +74,12 @@ public class BottomPop implements View.OnClickListener {
         setAlpha(0.6f);
     }
 
-    public void dismmisPop() {
+    public void dismissPop() {
         popupWindow.dismiss();
+    }
+
+    public void setOffsize(int offsize) {
+        this.offsize = offsize;
     }
 
     public void setList(List<String> list) {
@@ -74,11 +100,34 @@ public class BottomPop implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+
         int i = view.getId();
+        //确认按钮
         if (i == R.id.bottom_ok) {
-
-        } else if (i == R.id.bottom_cancel) {
-
+            if (listener != null) {
+                listener.onClickOk(wheelView.getSeletedItem(), wheelView.getSeletedIndex());
+            }
         }
+        //取消按钮
+        if (i == R.id.bottom_cancel) {
+            if (listener != null) {
+                listener.onClickCancel();
+            }
+        }
+    }
+
+    /**
+     * 回调接口
+     */
+    public interface OnClickOkCancelListener {
+        void onClickOk(String items, int position);
+
+        void onClickCancel();
+    }
+
+    private OnClickOkCancelListener listener;
+
+    public void setOnClickOkCancelListener(OnClickOkCancelListener listener) {
+        this.listener = listener;
     }
 }

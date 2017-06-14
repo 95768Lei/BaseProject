@@ -1,16 +1,14 @@
-package com.example.administrator.coo.upDownListView;
+package com.note.zl.sanjiopopupwindow;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.example.administrator.coo.R;
 
 /**
  * Created by zhanglei on 2017/6/13.
